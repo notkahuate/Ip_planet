@@ -13,10 +13,15 @@ namespace IpPlanet.Infrastructure.Service
     {
         private readonly DapperContext _context;
 
-        public AuthService(DapperContext context)
+        private readonly JWTService _jwtService;
+
+        public AuthService(DapperContext context, JWTService jwtService)
         {
             _context = context;
+            _jwtService = jwtService;
         }
+
+        
 
         public async Task RegisterAsync(RegisterUserDTo dto)
 {
@@ -37,30 +42,34 @@ namespace IpPlanet.Infrastructure.Service
         }
 
         public async Task<LoginResponseDto?> LoginAsync(LoginRequestDto request)
-{
-            const string query = "SELECT * FROM fn_get_user_for_login(@Username);";
-
-            using var connection = _context.CreateConnection();
-
-            var user = await connection.QuerySingleOrDefaultAsync<LoginUserDbDto>(
-                query,
-                new { Username = request.Username });
-
-            if (user == null)
-                return null;
-
-            bool isValid = BCrypt.Net.BCrypt.Verify(request.Password, user.Password_Hash);
-
-            if (!isValid)
-                return null;
-
-            return new LoginResponseDto
             {
-                Id = user.Id,
-                Username = user.Username,
-                Role = user.Role_Name,
-                Email = user.Email
-            };
-        }
+                const string query = "SELECT * FROM fn_get_user_for_login(@Username);";
+
+                using var connection = _context.CreateConnection();
+
+                var user = await connection.QuerySingleOrDefaultAsync<LoginUserDbDto>(
+                    query,
+                    new { Username = request.Username });
+
+                if (user == null)
+                    return null;
+
+                bool isValid = BCrypt.Net.BCrypt.Verify(request.Password, user.Password_Hash);
+
+                if (!isValid)
+                    return null;
+
+                // ✅ Generar el JWT usando JwtService
+                var token = _jwtService.GenerateToken(user.Id, user.Username, user.Role_Name);
+
+                return new LoginResponseDto
+                {
+                    Id = user.Id,
+                    Username = user.Username,
+                    Role = user.Role_Name,
+                    Email = user.Email,
+                    Token = token
+                };
+            }
     }
 }
