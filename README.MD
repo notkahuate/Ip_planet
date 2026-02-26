@@ -43,12 +43,13 @@ Clean Architecture implemtando diferetnes capas como Domain, Applicatio y infras
 2. instale dependencias 
     dotnet restore
     dotnet build
-3. Cree la base de datos 
+3. Cree la base de datos y modifique el archivo .env
     Puede copiarla y pegar se encuentra en el archivo BD.sql
+    y el archivo .env debera llenarlo con sus datos de bd
 4. Ejecute el proyecto en consola 
    dotnet run --project IpPlanet.Api
 5. Puede abrir swagger 
     http://localhost:5171/swagger/index.html
 
 ## Modelo relacional de la base de datos 
-   
+   ![alt text](image-1.png)

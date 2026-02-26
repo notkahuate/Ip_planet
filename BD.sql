@@ -1124,7 +1124,6 @@ BEGIN
     IF NOT EXISTS (
         SELECT 1 FROM roles
         WHERE id = p_role_id
-          AND is_active = TRUE
     ) THEN
         RAISE EXCEPTION 'Invalid role';
     END IF;
