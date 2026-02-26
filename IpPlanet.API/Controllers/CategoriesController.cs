@@ -20,7 +20,7 @@ public class CategoriesController : ControllerBase
         _categoryService = categoryService;
     }
 
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateCategoryDto dto)
     {

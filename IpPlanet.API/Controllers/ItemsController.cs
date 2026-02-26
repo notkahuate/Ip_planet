@@ -22,7 +22,7 @@ public class ItemsController : ControllerBase
         _itemService = itemService;
     }
 
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "ADMIN")]
     [HttpPost]
     public async Task<IActionResult> CreateItem([FromBody] CreateItemDto dto)
     {

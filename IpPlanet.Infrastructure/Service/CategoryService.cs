@@ -20,13 +20,14 @@ namespace IpPlanet.Infrastructure.Service
 
         public async Task CreateAsync(CreateCategoryDto dto)
         {
-            const string procedure = "CALL sp_create_category(@Name);";
+             const string procedure = "CALL sp_create_category(@category_name, @category_desc);";
 
-            using var connection = _context.CreateConnection();
+             using var connection = _context.CreateConnection();
 
             await connection.ExecuteAsync(procedure, new
             {
-                dto.Name
+                category_name = dto.Name,
+                category_desc = "" 
             });
         }
         }

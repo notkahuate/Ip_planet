@@ -25,15 +25,18 @@ namespace IpPlanet.Infrastructure.Service
             {
                 new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
                 new Claim(JwtRegisteredClaimNames.UniqueName, username),
-                new Claim(ClaimTypes.Role, role)
+
+                // 🔑 Aquí es donde cambias ClaimTypes.Role por la URI que espera tu middleware
+                new Claim("http://schemas.microsoft.com/ws/2008/06/identity/claims/role", role)
             };
 
             var token = new JwtSecurityToken(
-                issuer,
-                audience,
-                claims,
+                issuer: issuer,
+                audience: audience,
+                claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(expiresMinutes),
-                signingCredentials: credentials);
+                signingCredentials: credentials
+            );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
