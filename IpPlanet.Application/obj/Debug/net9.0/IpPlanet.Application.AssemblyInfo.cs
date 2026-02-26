@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IpPlanet.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f47364a7b4c98dd654bc2a479551c8f23e40c83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45838b1bfde6d3388e7dfb1b7d1dcf9040729ca8")]
 [assembly: System.Reflection.AssemblyProductAttribute("IpPlanet.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IpPlanet.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
