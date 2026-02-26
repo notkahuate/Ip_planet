@@ -6,7 +6,7 @@ using IpPlanet.Application.DTOs.Items;
 
 namespace IpPlanet.Application.Interfaces
 {
-    public interface ItemService
+    public interface IItemService
     {
         Task CreateAsync(CreateItemDto dto);
 
