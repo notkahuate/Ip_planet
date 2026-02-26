@@ -6,17 +6,16 @@ using IpPlanet.Infrastructure.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔹 Add Controllers
+// Controllers
 builder.Services.AddControllers();
-
-// 🔹 Swagger
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 🔹 Registrar DapperContext
+//  Registrar DapperContext
 builder.Services.AddScoped<DapperContext>();
 
-// 🔹 Registrar Servicios
+//  Registrar Servicios
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -24,7 +23,7 @@ builder.Services.AddScoped<IWarehouseService, WarehouseService>();
 
 var app = builder.Build();
 
-// 🔹 Middleware
+//  Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -35,7 +34,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-// 🔹 Mapear Controllers
+// Mapear Controllers
 app.MapControllers();
 
 app.Run();

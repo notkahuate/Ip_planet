@@ -9,5 +9,6 @@ namespace IpPlanet.Application.Interfaces
     public interface IAuthService
     {
         Task<LoginResponseDto?> LoginAsync(LoginRequestDto request);
+        Task RegisterAsync(RegisterUserDTo dto);
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\bin\Debug\net9.0\IpPlanet.Domain.deps.json
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\bin\Debug\net9.0\IpPlanet.Domain.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\bin\Debug\net9.0\IpPlanet.Domain.pdb
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.AssemblyInfoInputs.cache
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.AssemblyInfo.cs
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.sourcelink.json
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\refint\IpPlanet.Domain.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\IpPlanet.Domain.pdb
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Domain\obj\Debug\net9.0\ref\IpPlanet.Domain.dll

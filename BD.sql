@@ -1303,6 +1303,7 @@ CREATE OR REPLACE FUNCTION fn_get_user_for_login(
 RETURNS TABLE (
     id UUID,
     username VARCHAR,
+    email VARCHAR,
     password_hash TEXT,
     role_name VARCHAR
 )
@@ -1313,12 +1314,12 @@ BEGIN
     SELECT
         u.id,
         u.username,
+        u.email,
         u.password_hash,
         r.name
     FROM users u
     JOIN roles r ON r.id = u.role_id
     WHERE LOWER(u.username) = LOWER(p_username)
-      AND u.is_active = TRUE
-      AND r.is_active = TRUE;
+      AND u.is_active = TRUE;
 END;
 $$;

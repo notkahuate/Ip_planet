@@ -1,0 +1,16 @@
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\bin\Debug\net9.0\IpPlanet.Application.deps.json
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\bin\Debug\net9.0\IpPlanet.Application.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\bin\Debug\net9.0\IpPlanet.Application.pdb
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\bin\Debug\net9.0\IpPlanet.Domain.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\bin\Debug\net9.0\IpPlanet.Domain.pdb
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.csproj.AssemblyReference.cache
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.AssemblyInfoInputs.cache
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.AssemblyInfo.cs
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.csproj.CoreCompileInputs.cache
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.sourcelink.json
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.E50F875A.Up2Date
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\refint\IpPlanet.Application.dll
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\IpPlanet.Application.pdb
+C:\Users\kbuen\Prueba tecnica\Ip_planet\IpPlanet.Application\obj\Debug\net9.0\ref\IpPlanet.Application.dll

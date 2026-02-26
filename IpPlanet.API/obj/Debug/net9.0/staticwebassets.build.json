@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pUJNy+nJ/wNkuN0vqMUaG3RD6MaEP3Pr0Xpw7LMEX7g=",
+  "Source": "IpPlanet.API",
+  "BasePath": "_content/IpPlanet.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

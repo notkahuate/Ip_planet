@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Dapper;
 using IpPlanet.Application.DTOs.Categories;
 using IpPlanet.Infrastructure.Data;
+using IpPlanet.Application.Interfaces;
 
 namespace IpPlanet.Infrastructure.Service
 {
-    public class CategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly DapperContext _context;
 

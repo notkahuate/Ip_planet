@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Dapper;
 using IpPlanet.Application.DTOs.Warehouse;
 using IpPlanet.Infrastructure.Data;
+using IpPlanet.Application.Interfaces;
 
 namespace IpPlanet.Infrastructure.Service
 {
-    public class WarehouseService
+    public class WarehouseService : IWarehouseService
     {
         private readonly DapperContext _context;
 
